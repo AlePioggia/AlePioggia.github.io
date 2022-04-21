@@ -95,7 +95,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background-color: #4158D0;
+		background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -186,16 +187,6 @@ input, select, textarea {
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
-		}
-
-		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
-			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
 		}
 
 	h1 {
@@ -928,6 +919,31 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
+				.btn-grad {background-image: linear-gradient(to right, #3a6186 0%, #89253e  51%, #3a6186  100%)}
+				.btn-grad {
+				   margin: 10px;
+				   padding: 15px 45px;
+				   text-align: center;
+				   text-transform: uppercase;
+				   transition: 0.5s;
+				   background-size: 200% auto;
+				   color: white;            
+				   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+				   border-radius: 10px;
+				   display: block;
+				 }
+	   
+				 .btn-grad:hover {
+				   background-position: right center; /* change the direction of the change here */
+				   color: #fff;
+				   text-decoration: none;
+				 }
+				
+				 
+				
+				
+				
+
 /* Table */
 
 	.table-wrapper {
@@ -1140,9 +1156,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1331,6 +1350,10 @@ input, select, textarea {
 				font-size: 0.8rem;
 				line-height: 2;
 			}
+
+		ul li{
+			display: inline-block;
+		}
 
 		#header nav ul {
 			display: -moz-flex;
